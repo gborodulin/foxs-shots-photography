@@ -5,8 +5,13 @@ import {
 	makeStyles,
 	Typography,
 	IconButton,
+	AppBar,
+	Toolbar,
+	SvgIcon,
 } from '@material-ui/core';
 import landingPic from './images/landing.jpg';
+import { ReactComponent as instagramIcon } from './icons/instagram.svg';
+import { ReactComponent as facebookIcon } from './icons/facebook.svg';
 
 const useStyles = makeStyles({
 	landingContainer: {
@@ -32,6 +37,11 @@ const useStyles = makeStyles({
 		color: 'rgba(173, 19, 187)',
 		textShadow: '-3px 5px 3px rgba(173, 19, 187, 0.6);',
 	},
+	toolbarIcon: {
+		fontSize: '50px',
+		color: 'rgba(173, 19, 187)',
+		paddingLeft: '10px',
+	},
 });
 
 function Landing() {
@@ -39,6 +49,30 @@ function Landing() {
 	return (
 		<Container className={classes.landingContainer}>
 			{/* <div className={classes.landingFrostedCover} /> */}
+			<AppBar position='static' style={{ background: 'transparent' }}>
+				<Toolbar style={{ textAlign: 'right' }}>
+					<Grid justify='space-between' container>
+						<Grid item />
+
+						<Grid item style={{ paddingRight: '5%' }}>
+							<IconButton edge='end'>
+								<SvgIcon
+									className={classes.toolbarIcon}
+									component={instagramIcon}
+									viewBox='0 0 600 476.6'
+								/>
+							</IconButton>
+							<IconButton edge='end'>
+								<SvgIcon
+									className={classes.toolbarIcon}
+									component={facebookIcon}
+									viewBox='0 0 600 476.6'
+								/>
+							</IconButton>
+						</Grid>
+					</Grid>
+				</Toolbar>
+			</AppBar>
 			<Grid
 				style={{
 					height: '100%',
