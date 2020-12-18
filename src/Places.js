@@ -18,8 +18,8 @@ const placesPicList = [place1, place2, place3, place4, place5];
 
 const useStyles = makeStyles({
 	placesContainer: {
-		height: '100vh',
-		minHeight: 'fit-content',
+		height: 'fit-content',
+		minHeight: '100vh',
 		width: '100vw',
 		paddingTop: '30px',
 		backgroundColor: 'black',
@@ -33,6 +33,7 @@ const useStyles = makeStyles({
 		// width: '100%',
 		height: '550px',
 		padding: '20px',
+		paddingBottom: '50px',
 		gap: '3%',
 	},
 	placesPic: {
@@ -76,7 +77,7 @@ export default function Places() {
 	const classes = useStyles();
 
 	return (
-		<Container className={classes.placesContainer}>
+		<Container maxWidth={false} className={classes.placesContainer}>
 			<Typography
 				variant='h2'
 				style={{

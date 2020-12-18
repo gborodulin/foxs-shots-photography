@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 	landingContainer: {
 		height: '100vh',
 		minHeight: 'fit-content',
-		width: '100vw',
+		width: '100%',
 		padding: '0px',
 		backgroundImage:
 			'linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' +
@@ -27,6 +27,7 @@ const useStyles = makeStyles({
 		backgroundPosition: 'center center',
 		backgroundSize: 'cover',
 		backgroundAttachment: 'fixed',
+		margin: '0',
 	},
 	landingButton: {
 		color: 'rgba(173, 19, 187)',
@@ -36,6 +37,7 @@ const useStyles = makeStyles({
 		fontFamily: 'title',
 		color: 'rgba(173, 19, 187)',
 		textShadow: '-3px 5px 3px rgba(173, 19, 187, 0.6);',
+		marginBottom: '130px',
 	},
 	toolbarIcon: {
 		fontSize: '50px',
@@ -44,10 +46,10 @@ const useStyles = makeStyles({
 	},
 });
 
-function Landing() {
+function Landing(props) {
 	const classes = useStyles();
 	return (
-		<Container className={classes.landingContainer}>
+		<Container maxWidth={false} className={classes.landingContainer}>
 			{/* <div className={classes.landingFrostedCover} /> */}
 			<AppBar position='static' style={{ background: 'transparent' }}>
 				<Toolbar style={{ textAlign: 'right' }}>
@@ -55,60 +57,68 @@ function Landing() {
 						<Grid item />
 
 						<Grid item style={{ paddingRight: '5%' }}>
-							<IconButton edge='end'>
-								<SvgIcon
-									className={classes.toolbarIcon}
-									component={instagramIcon}
-									viewBox='0 0 600 476.6'
-								/>
-							</IconButton>
-							<IconButton edge='end'>
-								<SvgIcon
-									className={classes.toolbarIcon}
-									component={facebookIcon}
-									viewBox='0 0 600 476.6'
-								/>
-							</IconButton>
+							<a href='https://www.instagram.com/foxs.shots'>
+								<IconButton edge='end'>
+									<SvgIcon
+										className={classes.toolbarIcon}
+										component={instagramIcon}
+										viewBox='0 0 600 476.6'
+									/>
+								</IconButton>
+							</a>
+
+							<a href='https://www.facebook.com/foxs.shots/'>
+								<IconButton edge='end'>
+									<SvgIcon
+										className={classes.toolbarIcon}
+										component={facebookIcon}
+										viewBox='0 0 600 476.6'
+									/>
+								</IconButton>
+							</a>
 						</Grid>
 					</Grid>
 				</Toolbar>
 			</AppBar>
 			<Grid
 				style={{
-					height: '100%',
+					marginTop: '50px',
 				}}
+				direction='column'
 				container
-				direction='row'
 				alignItems='center'
-				justify='center'>
-				<Grid item xs={12}>
+				justify='space-evenly'>
+				<Grid item>
 					<Typography className={classes.title} variant='h1'>
 						Fox's Shots Photography
 					</Typography>
 				</Grid>
-				<Grid
-					item
-					container
-					xs={12}
-					alignItems='center'
-					justify='center'
-					spacing={5}>
+				<Grid item container alignItems='center' justify='center' spacing={5}>
 					<Grid item>
-						<IconButton>
+						<IconButton
+							onClick={() => {
+								props.scrollTo('peopleRef');
+							}}>
 							<Typography className={classes.landingButton} variant='h3'>
 								People
 							</Typography>
 						</IconButton>
 					</Grid>
 					<Grid item>
-						<IconButton>
+						<IconButton
+							onClick={() => {
+								props.scrollTo('placesRef');
+							}}>
 							<Typography className={classes.landingButton} variant='h3'>
 								Places
 							</Typography>
 						</IconButton>
 					</Grid>
 					<Grid item>
-						<IconButton>
+						<IconButton
+							onClick={() => {
+								props.scrollTo('thingsRef');
+							}}>
 							<Typography className={classes.landingButton} variant='h3'>
 								Things
 							</Typography>

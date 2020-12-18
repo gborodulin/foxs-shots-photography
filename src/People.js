@@ -7,6 +7,7 @@ import {
 	IconButton,
 	Paper,
 	Box,
+	useRef,
 } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
 
@@ -22,7 +23,7 @@ const useStyles = makeStyles({
 	peopleContainer: {
 		height: 'fit-content',
 		minHeight: 'fit-content',
-		width: '100vw',
+		width: '100%',
 		padding: '0px',
 		backgroundColor: 'black',
 		color: 'white',
@@ -32,22 +33,16 @@ const useStyles = makeStyles({
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 		backgroundSize: 'cover',
-		// backgroundAttachment: 'fixed',
 		height: '500px',
 		width: '100%',
-		// 	position: 'fixed',
-		// 	top: 0,
-		// 	bottom: 0,
-		// 	left: 0,
-		// 	right: 0,
 	},
 });
 
-export default function People() {
+export default function People(props) {
 	const classes = useStyles();
 
 	return (
-		<Container className={classes.peopleContainer}>
+		<Container maxWidth={false} className={classes.peopleContainer}>
 			<Grid container alignItems='center' justify='center'>
 				<Grid item xs={12}>
 					<Typography variant='h2' style={{ fontFamily: 'title' }}>
