@@ -32,6 +32,11 @@ const useStyles = makeStyles({
 	landingButton: {
 		color: 'rgba(173, 19, 187)',
 		textShadow: '-2px 3px 2px rgba(173, 19, 187, 0.6);',
+		transition: 'background-color 500ms, color 500ms',
+		'&:hover': {
+			backgroundColor: 'rgba(173, 19, 187, 0.4)',
+			color: 'white',
+		},
 	},
 	title: {
 		fontFamily: 'title',
@@ -96,32 +101,29 @@ function Landing(props) {
 				<Grid item container alignItems='center' justify='center' spacing={5}>
 					<Grid item>
 						<IconButton
+							className={classes.landingButton}
 							onClick={() => {
 								props.scrollTo('peopleRef');
 							}}>
-							<Typography className={classes.landingButton} variant='h3'>
-								People
-							</Typography>
+							<Typography variant='h3'>People</Typography>
 						</IconButton>
 					</Grid>
 					<Grid item>
 						<IconButton
+							className={classes.landingButton}
 							onClick={() => {
 								props.scrollTo('placesRef');
 							}}>
-							<Typography className={classes.landingButton} variant='h3'>
-								Places
-							</Typography>
+							<Typography variant='h3'>Places</Typography>
 						</IconButton>
 					</Grid>
 					<Grid item>
 						<IconButton
+							className={classes.landingButton}
 							onClick={() => {
 								props.scrollTo('thingsRef');
 							}}>
-							<Typography className={classes.landingButton} variant='h3'>
-								Things
-							</Typography>
+							<Typography variant='h3'>Things</Typography>
 						</IconButton>
 					</Grid>
 				</Grid>
