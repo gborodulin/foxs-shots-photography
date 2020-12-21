@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.048620ca.chunk.css",
+    "main.js": "/my-app/static/js/main.4cdad288.chunk.js",
+    "main.js.map": "/my-app/static/js/main.4cdad288.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.24a11437.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.24a11437.js.map",
+    "static/js/2.77b6363a.chunk.js": "/my-app/static/js/2.77b6363a.chunk.js",
+    "static/js/2.77b6363a.chunk.js.map": "/my-app/static/js/2.77b6363a.chunk.js.map",
+    "static/js/3.a990d22e.chunk.js": "/my-app/static/js/3.a990d22e.chunk.js",
+    "static/js/3.a990d22e.chunk.js.map": "/my-app/static/js/3.a990d22e.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "static/css/main.048620ca.chunk.css.map": "/my-app/static/css/main.048620ca.chunk.css.map",
+    "static/js/2.77b6363a.chunk.js.LICENSE.txt": "/my-app/static/js/2.77b6363a.chunk.js.LICENSE.txt",
+    "static/media/13.7716c5b1.jpg": "/my-app/static/media/13.7716c5b1.jpg",
+    "static/media/1apothiccomposite.jpg": "/my-app/static/media/1apothiccomposite.f67d2b72.jpg",
+    "static/media/2thanksgiving2019finals-15.jpg": "/my-app/static/media/2thanksgiving2019finals-15.2e32a4a8.jpg",
+    "static/media/3jan1st2020-14.jpg": "/my-app/static/media/3jan1st2020-14.5d90cd23.jpg",
+    "static/media/4orangechickenbw.jpg": "/my-app/static/media/4orangechickenbw.2d12189b.jpg",
+    "static/media/5kevlinshootedits-6.jpg": "/my-app/static/media/5kevlinshootedits-6.a497fda4.jpg",
+    "static/media/6chinaeditsfeb20th-3.jpg": "/my-app/static/media/6chinaeditsfeb20th-3.984cbe18.jpg",
+    "static/media/7car.jpg": "/my-app/static/media/7car.cb321d7a.jpg",
+    "static/media/FALLEDIT1.e82f2cd6.jpg": "/my-app/static/media/FALLEDIT1.e82f2cd6.jpg",
+    "static/media/index.css": "/my-app/static/media/title.3d30eacb.ttf",
+    "static/media/albsecond.d1f23ce9.jpg": "/my-app/static/media/albsecond.d1f23ce9.jpg",
+    "static/media/attempt2edit9.bb0ea635.jpg": "/my-app/static/media/attempt2edit9.bb0ea635.jpg",
+    "static/media/bityourtoe-10.a96b1995.jpg": "/my-app/static/media/bityourtoe-10.a96b1995.jpg",
+    "static/media/editsround2-14.f740cece.jpg": "/my-app/static/media/editsround2-14.f740cece.jpg",
+    "static/media/editsround2-8.aef472b2.jpg": "/my-app/static/media/editsround2-8.aef472b2.jpg",
+    "static/media/facebook.8d5fdeca.svg": "/my-app/static/media/facebook.8d5fdeca.svg",
+    "static/media/greg2-23.3fcb29d6.jpg": "/my-app/static/media/greg2-23.3fcb29d6.jpg",
+    "static/media/instagram.482d4132.svg": "/my-app/static/media/instagram.482d4132.svg",
+    "static/media/landing.52b19804.jpg": "/my-app/static/media/landing.52b19804.jpg",
+    "static/media/montauk2.794c86b4.jpg": "/my-app/static/media/montauk2.794c86b4.jpg",
+    "static/media/raritan1.704a9381.jpg": "/my-app/static/media/raritan1.704a9381.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24a11437.js",
+    "static/js/2.77b6363a.chunk.js",
+    "static/css/main.048620ca.chunk.css",
+    "static/js/main.4cdad288.chunk.js"
+  ]
+}
